@@ -1,4 +1,27 @@
-const refresh = document.querySelector('.fa-refresh');
-const dateToday = document.getElementById('date');
-const doList = document.getElementById('list');
-const input =document.getElementById('input').value
+// business logic
+function Add(task) {
+  this.addTask = task;
+}
+// date function
+const day = new Date();
+$(document).ready(function () {
+  // const refresh = $('.fa-refresh');
+  const dateToday = $('#date');
+  $(dateToday).text(day);
+  var doList = $('#list');
+
+  $("#addBtn").click(function (event) {
+    event.preventDefault();
+    var inputTask = $('#input').val();
+
+    var newTask = new Add(inputTask);
+    if (!inputTask) {
+      alert("Please fill a to do item");
+      return false;
+    } else {
+      $(doList).append("<li><i class='fa fa-circle-thin complete'></i>" + newTask.addTask + "<i class='fa fa-trash-o delete position-absolute end-0 bg-danger text-white px-3 me-3 p-2'></i></li>");
+      $('input[type="text"]').val(" ");
+      return true;
+    }
+  })
+})
