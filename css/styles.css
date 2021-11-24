@@ -16,4 +16,9 @@ ul li{
   line-height: 80px;
   /* background-color: rgb(199, 194, 194); */
   list-style: none;
+  cursor: pointer;
+}
+
+.fa:hover{
+ font-size: 20px;
 }
