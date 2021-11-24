@@ -1,0 +1,19 @@
+.card-top{
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  height: 300px;
+}
+body{
+  background-color: bisque;
+}
+.container{
+  width: 50%;
+}
+.fa {
+  font-size: large;
+}
+ul li{
+  line-height: 80px;
+  /* background-color: rgb(199, 194, 194); */
+  list-style: none;
+}
