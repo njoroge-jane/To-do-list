@@ -1,24 +1,25 @@
-.card-top{
+.card-top {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   height: 300px;
 }
-body{
+
+body {
   background-color: bisque;
 }
 .container-fluid{
   width: 50%;
 }
-
 .fa {
   font-size: large;
 }
-ul li{
+
+ul li {
   line-height: 80px;
   /* background-color: rgb(199, 194, 194); */
   list-style: none;
   cursor: pointer;
-  
+
 }
 .container{
   position: relative;
@@ -28,6 +29,6 @@ ul{
   max-height: 350px;
 }
 
-.fa:hover{
- font-size: 20px;
+.fa:hover {
+  font-size: 20px;
 }
