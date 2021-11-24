@@ -7,11 +7,9 @@
 body {
   background-color: bisque;
 }
-
-.container {
+.container-fluid{
   width: 50%;
 }
-
 .fa {
   font-size: large;
 }
@@ -21,7 +19,14 @@ ul li {
   /* background-color: rgb(199, 194, 194); */
   list-style: none;
   cursor: pointer;
-  /* display: none; */
+
+}
+.container{
+  position: relative;
+}
+ul{
+  overflow-y: auto;
+  max-height: 350px;
 }
 
 .fa:hover {

@@ -1,3 +1,4 @@
+
 // business logic
 function Add(task) {
   this.addTask = task;
@@ -33,3 +34,4 @@ $(document).ready(function () {
     $(this).remove();
   })
 })
+
