@@ -31,7 +31,7 @@ $(document).ready(function () {
   })
   // delete a task
   $(document).on("click", ".delete", function () {
-    $(this).remove();
+    $(this).closest("li").remove();
   })
 })
 
